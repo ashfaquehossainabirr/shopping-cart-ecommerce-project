@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Ecommerce</title>
+
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="./css/styles.css"/>
+
+    <!-- JS Source -->
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <div class="products">
+        <h1 class="product-headline">Product List</h1>
+
+        <div class="product">
+            <div>
+                <img src="./images/ford.jpg" alt="ford-car">
+            </div>
+            <div>
+                <h1>Ford Car</h1>
+                <p>Price: $1000000</p>
+                <button onclick="addToCart('Ford Car', 1000000, './images/ford.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div>
+                <img src="./images/bmw.jpg" alt="bmw-car">
+            </div>
+            <div>
+                <h1>BMW Car</h1>
+                <p>Price: $2000000</p>
+                <button onclick="addToCart('BMW Car', 2000000, './images/bmw.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cart-items">
+        <div class="items">
+            <h2>My Cart (Items: <span class="cart-length">0</span>)</h2>
+
+            <div id="cart">
+                <!-- Here all carts will be injected from js -->
+                <p style="font-size: 20px;">No Items Here</p>
+            </div>
+
+            <hr/>
+
+            <h3>Total Price: $<span id="total">0</span></h3>
+        </div>
+    </div>
+</body>
+</html>
