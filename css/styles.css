@@ -63,7 +63,7 @@ h1.product-headline {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 12px;
     background-color: hsl(0, 0%, 94%);
 }
@@ -93,6 +93,17 @@ img.cart-img {
     height: 80px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.cart-items .items h2,
+.cart-items .items h3 {
+    margin-left: 10px;
+}
+
+#cart {
+    max-height: 300px;
+    padding: 0 10px;
+    overflow-y: auto;
 }
 
 
